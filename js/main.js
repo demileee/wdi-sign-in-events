@@ -7,7 +7,7 @@ window.addEventListener("DOMContentLoaded", function(){
 
   document.querySelector('.close').addEventListener("click", function() {
     document.querySelector('.modal').className = "modal animate-opacity-off";
-    setTimeout(function(){document.querySelector('.modal').style.display = 'none'}, 800);
+    setTimeout(function(){document.querySelector('.modal').style.display = 'none'},700);
   });
 
   document.querySelector('.getstarted').addEventListener("click", function(e) {
@@ -24,7 +24,7 @@ window.addEventListener("DOMContentLoaded", function(){
   });
 
   document.querySelector('.modal').addEventListener("click", function(e) {
-    if(!e.target.classList.contains("getstarted")) {
+    if(!e.target.classList.contains("modal-on")) {
       document.querySelector('.modal').className = "modal animate-opacity-off";
       setTimeout(function(){document.querySelector('.modal').style.display = 'none'}, 800);
     };
